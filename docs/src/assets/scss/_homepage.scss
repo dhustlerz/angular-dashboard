@@ -1,0 +1,70 @@
+
+/*
+ * Homepage
+ *
+ * Tweaks to the custom homepage and the masthead (main jumbotron).
+ */
+
+// class added by middleman
+.index {
+  background-image: url('../images/mb-bg-fb-20.jpg');
+  background-size: cover;
+}
+
+ /* Masthead (headings and download button) */
+.oxy-masthead {
+  height: 100%;
+  position: relative;
+  padding: 30px 15px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.oxy-masthead h1 {
+  font-size: 50px;
+  line-height: 1;
+  color: #fff;
+  small {
+    color: #fff;
+  }
+}
+.oxy-masthead {
+  p {
+    color: #fff;
+  }
+}
+.oxy-masthead .btn-outline-inverse {
+  margin: 10px;
+  color: #fff;
+  background: #785247;
+  border-color: #785247;
+}
+
+@media (min-width: 768px) {
+  .oxy-masthead {
+    text-align: left;
+    padding-top:    140px;
+    padding-bottom: 140px;
+  }
+  .oxy-masthead h1 {
+    font-size: 120px;
+    font-weight: 100;
+    small {
+      font-weight: 100;
+    }
+  }
+  .oxy-masthead .lead {
+    margin-right: 25%;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .oxy-masthead .btn-outline-inverse {
+    width: auto;
+    margin: 20px 5px 20px 0;
+    padding: 18px 24px;
+    font-size: 21px;
+  }
+  .oxy-masthead-links {
+    padding: 0;
+    text-align: left;
+  }
+}

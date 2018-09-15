@@ -1,0 +1,19 @@
+---
+    layout: default.hbs
+    bodyclasses: oxy-docs-body
+---
+
+{{> navbar }}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="oxy-docs-sidebar col-md-3 sidebar-fixed hidden-sm-down">
+            {{sidecontents filename}}
+        </div>
+        <div class="oxy-docs-content col-md-9 offset-md-3">
+            {{#markdown}}
+                {{> body}}
+            {{/markdown}}
+        </div>
+    </div>
+</div>

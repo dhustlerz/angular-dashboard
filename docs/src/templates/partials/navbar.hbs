@@ -1,0 +1,21 @@
+<nav class="oxy-navbar navbar navbar-fixed-top navbar-dark bg-inverse">
+    <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.png" alt="" />
+    </a>
+    <a class="navbar-brand hidden-sm-down" href="index.html">
+        {{theme.name}}
+    </a>
+
+    <ul class="nav navbar-nav pull-right">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="{{links.demo}}">Demo</a>
+        </li>
+        {{#each topmenu}}
+        <li class="nav-item{{#compare ../basename "==" slug }} active{{/compare}}">
+            <a class="nav-link" href="{{slug}}.html">
+                {{name}}
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</nav>

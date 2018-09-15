@@ -1,0 +1,53 @@
+.oxy-docs-sidebar {
+  font-family: 'Oxygen', sans-serif;
+  position: fixed;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 16px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fafcfc;
+  border-right: 1px solid #eee;
+}
+
+.oxy-docs-sidebar-nav__section-heading {
+  color: #939da3;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.oxy-docs-sidebar-nav__heading {
+  color: #373a3c;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  &:hover {
+    color: #373a3c;
+    text-decoration: underline;
+  }
+
+  &.active {
+    color: #0099e5;
+  }
+}
+
+.oxy-docs-sidebar-nav .nav {
+  margin-bottom: 16px;
+}
+
+// nested navs
+.oxy-docs-sidebar-nav .nav .nav {
+  margin-left: 16px;
+  display: none;
+}
+
+.oxy-docs-sidebar-nav .nav .nav .oxy-docs-sidebar-nav__heading {
+  font-size: 0.9rem;
+
+  &.active {
+    color: #373a3c;
+  }
+}
